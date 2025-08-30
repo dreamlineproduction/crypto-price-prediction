@@ -12,14 +12,16 @@ A modern, interactive cryptocurrency price prediction visualization tool built w
 - Dark mode UI with modern gradient accents
 - Interactive tooltips with detailed information
 - Toggle-able data series
+- Personalized token tracking for price predictions across all market scenarios
+- Custom watchlist functionality for favorite cryptocurrencies
 
 ## 🛠️ Tech Stack
 
-- [Next.js 13+](https://nextjs.org/) - React Framework
-- [React 18](https://reactjs.org/) - JavaScript Library
-- [TypeScript](https://www.typescriptlang.org/) - Type Safety
-- [Chart.js](https://www.chartjs.org/) - Charting Library
-- [React-Chartjs-2](https://react-chartjs-2.js.org/) - React Components for Chart.js
+- [Next.js 15.5.2](https://nextjs.org/) - React Framework
+- [React 19.1.0](https://reactjs.org/) - JavaScript Library
+- [TypeScript ^5](https://www.typescriptlang.org/) - Type Safety
+- [Chart.js ^4.5.0](https://www.chartjs.org/) - Charting Library
+- [React-Chartjs-2 ^5.3.0](https://react-chartjs-2.js.org/) - React Components for Chart.js
 - [Bootstrap 5](https://getbootstrap.com/) - CSS Framework
 - [Bootstrap Icons](https://icons.getbootstrap.com/) - Icon Library
 
@@ -47,7 +49,45 @@ yarn dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🔧 Configuration
+## � Usage
+
+### Custom Token Tracking
+
+One of the powerful features of this application is the ability to track specific tokens of your interest:
+
+1. **Adding Custom Tokens**
+   - Use the "Add Token" feature to include any cryptocurrency you want to track
+   - Enter the token name or symbol
+   - The system will automatically generate price predictions for all three market scenarios:
+     - Bearish outlook (January-March)
+     - Neutral outlook (June-September)
+     - Bullish outlook (October-December)
+
+2. **Managing Your Watchlist**
+   - Easily add or remove tokens from your watchlist
+   - Track multiple tokens simultaneously
+   - Compare price predictions across different market sentiments
+   - Get detailed insights for each token in your watchlist
+
+3. **Visualization Features**
+   - View your custom tokens alongside predefined categories
+   - Toggle between different market scenarios
+   - Access detailed price predictions through interactive tooltips
+   - Compare performance across different market conditions
+
+### Price Prediction Categories
+
+The application offers three main categories:
+- **Top 10**: Major cryptocurrencies by market cap
+- **DeFi**: Decentralized Finance tokens
+- **Meme**: Popular meme-based cryptocurrencies
+
+Each category shows price predictions for:
+- 🔴 Bearish Case (Conservative estimate)
+- 🟡 Neutral Case (Moderate estimate)
+- 🟢 Bullish Case (Optimistic estimate)
+
+## �🔧 Configuration
 
 The price prediction data is stored in `app/data/cryptoData.ts`. You can modify this file to update the predictions or add new cryptocurrency categories.
 
